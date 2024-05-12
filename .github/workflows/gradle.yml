@@ -38,5 +38,5 @@ jobs:
       - name: pull docker image
         run: docker pull turkovskiyilia/java_web_test3
       - name: build docker image
-        run: docker build -t GradleTESTAPP:v1
+        run: docker build https://github.com/IliaTurkovskiy/JavaWebTest3
 #        docker run -p 8080:88 GradleTESTAPP:v1
