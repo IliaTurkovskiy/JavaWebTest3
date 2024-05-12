@@ -35,3 +35,7 @@ jobs:
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Pull and run docker image
+        run: docker pull turkovskiyilia/java_web_test3
+        docker build -t GradleTESTAPP:v1
+        docker run -p 8080:88 GradleTESTAPP:v1
