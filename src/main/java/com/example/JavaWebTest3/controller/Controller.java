@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 @RequestMapping("/")
 public class Controller {
-
+// Add some comments
     @GetMapping
     public ModelAndView getStartPage() {
         ModelAndView modelAndView = new ModelAndView();
